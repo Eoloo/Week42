@@ -10,7 +10,7 @@ let start = function(route, handle){
 
         // console.log("Request received!")
         response.writeHead(200, {"Content-type": "text/plain"});
-        response.write("Good morning world");
+        response.write("Good morning world, Welcome to node.js");
         response.end();
     }
    

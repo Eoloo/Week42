@@ -1,6 +1,6 @@
 let server = require('./server');
 let router = require('./router');
-let requestHandlers = require("./requestHandler")
+let requestHandlers = require("./requestHandlers")
 
 let handle = {};
 handle["/"] = requestHandlers.index;
@@ -9,6 +9,6 @@ handle["/portfolio.html"] = requestHandlers.portfolio;
 
 server.start(router.route, handle);
 
-handle = {
-    "index.html": index
-   }
+// handle = {
+//     "index.html": index
+//    }
