@@ -7,10 +7,10 @@ let start = function(route, handle){
         let pathname = url.parse(request.url).pathname
         console.log("Request for " + pathname + " has been received.")
         route(handle, pathname);
-
+        var content = route(handle, pathname)
         // console.log("Request received!")
         response.writeHead(200, {"Content-type": "text/plain"});
-        response.write("Good morning world, Welcome to node.js");
+        response.write("Content");
         response.end();
     }
    
