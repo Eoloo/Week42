@@ -10,7 +10,7 @@ let start = function(route, handle){
         var content = route(handle, pathname)
         // console.log("Request received!")
         response.writeHead(200, {"Content-type": "text/plain"});
-        response.write("Content");
+        response.write("Good morning DevOps");
         response.end();
     }
    
